@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/dbf51a75ec.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+	<!-- Navbar of -->
+    <nav>
+        <ul>
+            <li class="brand"> <img src="./images/logo.png" alt="musicplayer"> Spotify</li>
+            <li>Favourites</li>
+            <li>
+             <div class="search-container">
+                <form>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="search" id="search-box">
+                <i class="fa-solid fa-microphone"></i>
+                </form>
+             </div>    
+            </li>
+
+            <li>
+                <div id="notification-icon">
+                <i class="fa-solid fa-bell"></i> 
+                </div>
+            </li>
+			<li>
+                <div id="user-profile">
+                <img src="./images/me.jpg" alt="Image not found" class="profile-pic round-image"></li>
+            </div>
+                
+        </ul>
+    </nav>
+
+    <main>
+        <aside class="aside section1">
+                <!-- Here are all sections and every section has different content as mentioned in class names -->
+				<section class="page_carousel">
+					<img src="./images/dance.jpg" class="carousel_item carousel_image_1">
+					<img src="./images/moodbuster.jpg" class="carousel_item carousel_image_2">
+					<img src="./images/edm.jpg" class="carousel_item carousel_image_3">
+				</section>
+
+                <section class="latest-release">
+					<h1>Latest Release</h1>
+					<div class="main-flex">
+						<!-- item -->
+						<div class="flex-container">
+							<div class="latest_release_album flex-container">
+								<div class="album_image album_image_1">
+									<div class="overlay-content">
+										<i class="fas fa-play"></i>
+									</div>
+								</div>
+								<div class="album_details">
+								  <p class="album_title">In My Feelings</p>
+								  <p class="album_release">AUG 11,2017</p>
+								</div>
+							</div>
+							<div class="album_duration">
+								<input type="checkbox" id="latest-release-checkbox-1"
+								/>
+								<label for="latest-release-checkbox-1"
+								><i class="fas fa-ellipsis-h" style="font-size: large; float: right;"></i></label>
+								<p class="album_duration_value">4:44</p>
+								<div id="latest_release_dropdown1"
+								class="latest_release_dropdown"
+								>
+								<ul>
+									<li>Play now</li>
+									<li>Add to queue</li>
+									<li>Add to favorite</li>
+									<li>Get info</li>
+								</ul>
+								</div>
+							</div>	
+						</div>
+						<!-- item -->
+						<div class="flex-container">
+							<div class="latest_release_album flex-container">
+								<div class="album_image album_image_2">
+									<div class="overlay-content">
+										<i class="fas fa-play"></i>
+									</div>
+								</div>
+								<div class="album_details">
+								  <p class="album_title">I'll wait</p>
+								  <p class="album_release">AUG 11,2017</p>
+								</div>
+							</div>
+							<div class="album_duration">
+								<input type="checkbox" id="latest-release-checkbox-2"
+								/>
+								<label for="latest-release-checkbox-2"
+								><i class="fas fa-ellipsis-h" style="font-size: large; float: right;"></i></label>
+								<p class="album_duration_value">4:44</p>
+								<div
+								id="latest_release_dropdown2"
+								class="latest_release_dropdown"
+								>
+								<ul>
+									<li>Play now</li>
+									<li>Add to queue</li>
+									<li>Add to favorite</li>
+									<li>Get info</li>
+								</ul>
+								</div>
+							</div>	
+						</div>
+						<!-- item -->
+						<div class="flex-container">
+							<div class="latest_release_album flex-container">
+								<div class="album_image album_image_3">
+									<div class="overlay-content">
+										<i class="fas fa-play"></i>
+									</div>
+								</div>
+								<div class="album_details">
+								  <p class="album_title">Willow</p>
+								  <p class="album_release">AUG 11,2017</p>
+								</div>
+							</div>
+							<div class="album_duration">
+								<input type="checkbox" id="latest-release-checkbox-3"
+								/>
+								<label for="latest-release-checkbox-3"
+								><i class="fas fa-ellipsis-h" style="font-size: large; float: right;"></i></label>
+								<p class="album_duration_value">4:44</p>
+								<div
+								id="latest_release_dropdown3"
+								class="latest_release_dropdown"
+								>
+								<ul>
+									<li>Play now</li>
+									<li>Add to queue</li>
+									<li>Add to favorite</li>
+									<li>Get info</li>
+								</ul>
+								</div>
+							</div>	
+						</div>
+						<!-- item -->
+						<div class="flex-container">
+							<div class="latest_release_album flex-container">
+								<div class="album_image album_image_4">
+									<div class="overlay-content">
+										<i class="fas fa-play"></i>
+									</div>
+								</div>
+								<div class="album_details">
+								  <p class="album_title">Quarantine Clean</p>
+								  <p class="album_release">AUG 11,2017</p>
+								</div>
+							</div>
+							<div class="album_duration">
+								<input type="checkbox" id="latest-release-checkbox-4"
+								/>
+								<label for="latest-release-checkbox-4"
+								><i class="fas fa-ellipsis-h" style="font-size: large; float: right;"></i></label>
+								<p class="album_duration_value">4:44</p>
+								<div
+								id="latest_release_dropdown4"
+								class="latest_release_dropdown"
+								>
+								<ul>
+									<li>Play now</li>
+									<li>Add to queue</li>
+									<li>Add to favorite</li>
+									<li>Get info</li>
+								</ul>
+								</div>
+							</div>	
+						</div>
+					</div>
+				</section>
+
+                <section class="popular-artists">
+					<h1>Popular Artists</h1>
+					<div class="flex-container">
+						<!-- item -->
+                        <div class="artist-card">
+							<a href="./artist.html">
+								<div class="artist-card-image-container">
+									<img src="./images/popular-artist-1.jpg" alt="Can't find image">
+									<div class="overlay-content">
+										<i class="fas fa-play"></i>
+									</div>
+								</div>
+								<h3>Ed Sheeran</h3>                                
+							</a>
+						</div>
+						<!-- item -->
+                        <div class="artist-card">
+							<a href="./artist.html">
+								<div class="artist-card-image-container">
+									<img src="./images/popular-artist-2.jpg" alt="Can't find image">
+									<div class="overlay-content">
+										<i class="fas fa-play"></i>
+									</div>
+								</div>
+								<h3>Zayn Malik</h3>                                
+							</a>
+						</div>
+						<!-- item -->
+                        <div class="artist-card">
+							<a href="./artist.html">
+								<div class="artist-card-image-container">
+									<img src="./images/popular-artist-3.jpg" alt="Can't find image">
+									<div class="overlay-content">
+										<i class="fas fa-play"></i>
+									</div>
+								</div>
+								<h3>Eminem</h3>                                
+							</a>
+						</div>
+						<!-- item -->
+                        <div class="artist-card">
+							<a href="./artist.html">
+								<div class="artist-card-image-container">
+									<img src="./images/popular-artist-4.jpg" alt="Can't find image">
+									<div class="overlay-content">
+										<i class="fas fa-play"></i>
+									</div>
+								</div>
+								<h3>Taylor Swift</h3>                                
+							</a>
+						</div>
+						<!-- item -->
+                        <div class="artist-card">
+							<a href="./artist.html">
+								<div class="artist-card-image-container">
+									<img src="./images/popular-artist-5.jpg" alt="Can't find image">
+									<div class="overlay-content">
+										<i class="fas fa-play"></i>
+									</div>
+								</div>
+								<h3>Shirley Setia</h3>                                
+							</a>
+						</div>
+						<!-- item -->
+                        <div class="artist-card">
+							<a href="./artist.html">
+								<div class="artist-card-image-container">
+									<img src="./images/popular-artist-6.jpg" alt="Can't find image">
+									<div class="overlay-content">
+										<i class="fas fa-play"></i>
+									</div>
+								</div>
+								<h3>The Chainsmokers</h3>                                
+							</a>
+						</div>
+						<!-- item -->
+                        <div class="artist-card">
+							<a href="./artist.html">
+								<div class="artist-card-image-container">
+									<img src="./images/popular-artist-7.jpg" alt="Can't find image">
+									<div class="overlay-content">
+										<i class="fas fa-play"></i>
+									</div>
+								</div>
+								<h3>Drake</h3>                                
+							</a>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<div class="flex-container music-station">
+						<!-- item -->
+						<div class="station-logo">
+							<div class="station-last-background"></div>
+							<div class="station-middle-background"></div>
+							<div class="station-first-background">
+								<div class="station-foreground">
+									<img src="./images/gramophone.jpg" class="station-logo-image">
+									<div class="station-text">Stations</div>
+								</div>
+							</div>
+						</div>
+						<!-- item -->
+						<div class="radio-station-item round-image rs-item-1">
+							<div class="overlay-content">
+								Love
+							</div>
+						</div>
+						<!-- item -->
+						<div class="radio-station-item round-image rs-item-2">
+							<div class="overlay-content">
+								Chill
+							</div>
+						</div>
+						<!-- item -->
+						<div class="radio-station-item round-image rs-item-3">
+							<div class="overlay-content">
+								Party
+							</div>
+						</div>
+						<!-- item -->
+						<div class="radio-station-item round-image rs-item-4">
+							<div class="overlay-content">
+								Pop
+							</div>
+						</div>
+						<!-- item -->
+						<div class="radio-station-item round-image rs-item-5">
+							<div class="overlay-content">
+								Retro
+							</div>
+						</div>
+						<!-- item -->
+						<div class="radio-station-item round-image rs-item-6">
+							<div class="overlay-content">
+								Gym
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="music-genres flex-container">
+					<div class="music-genre-card">
+						<div class="overlay-content">
+							Party
+						</div>
+						<img src="./images/genre-party.jpg">
+					</div>
+					<div class="music-genre-card">
+						<div class="overlay-content">
+							Road Trip
+						</div>
+						<img src="./images/genre-road.jpg">
+					</div>
+					<div class="music-genre-card">
+						<div class="overlay-content">
+							Electronic
+						</div>
+						<img src="./images/genre-electronic.jpg">
+					</div>
+				</section>
+
+				<section class="latest-music english-music">
+					<!-- Here every song is wrapped in a song-card class -->
+					<h1>Latest English</h1>
+					<div class="flex-container">
+						<div class="song-card">
+							<div class="song-image">
+								<div class="overlay-fade-content">
+									<i class="fas fa-play"></i>
+								</div>
+								<img src="./images/never-ending-story.jpg" alt="Can't find image">
+							</div>
+							<div class="song-details">
+								<h3>Never ending story</h3>
+								<p>AUG 23, 2023</p>
+							</div>
+						</div>
+						<div class="song-card">
+							<div class="song-image">
+								<div class="overlay-fade-content">
+									<i class="fas fa-play"></i>
+								</div>
+								<img src="./images/where-she-goes.jpg" alt="Can't find image">
+							</div>
+							<div class="song-details">
+								<h3>Where she goes</h3>
+								<p>AUG 19, 2023</p>
+							</div>
+						</div>
+						<div class="song-card">
+							<div class="song-image">
+								<div class="overlay-fade-content">
+									<i class="fas fa-play"></i>
+								</div>
+								<img src="./images/cardigan-taylor.jpg" alt="Can't find image">
+							</div>
+							<div class="song-details">
+								<h3>Cardigan</h3>
+								<p>AUG 15, 2023</p>
+							</div>
+						</div>
+						<div class="song-card">
+							<div class="song-image">
+								<div class="overlay-fade-content">
+									<i class="fas fa-play"></i>
+								</div>
+								<img src="./images/you-wiz.jpg" alt="Can't find image">
+							</div>
+							<div class="song-details">
+								<h3>You</h3>
+								<p>AUG 2, 2023</p>
+							</div>
+						</div>
+						<div class="song-card">
+							<div class="song-image">
+								<div class="overlay-fade-content">
+									<i class="fas fa-play"></i>
+								</div>
+								<img src="./images/see-you-again.jpg" alt="Can't find image">
+							</div>
+							<div class="song-details">
+								<h3>See you again</h3>
+								<p>JULY 29, 2023</p>
+							</div>
+						</div>
+						<div class="song-card">
+							<div class="song-image">
+								<div class="overlay-fade-content">
+									<i class="fas fa-play"></i>
+								</div>
+								<img src="./images/dying-for-song.jpg" alt="Can't find image">
+							</div>
+							<div class="song-details">
+								<h3>What are we dying for</h3>
+								<p>JULY 15, 2023</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="latest-music hindi-music">
+					<!-- Here every song is wrapped in a song-card class -->
+					<h1>Latest Hindi</h1>
+					<div class="flex-container">
+						<div class="song-card">
+							<div class="song-image">
+								<div class="overlay-fade-content">
+									<i class="fas fa-play"></i>
+								</div>
+								<img src="./images/aaj-ke-baad.jpg" alt="Can't find image">
+							</div>
+							<div class="song-details">
+								<h3>Aaj ke Baad</h3>
+								<p>AUG 11, 2017</p>
+							</div>
+						</div>
+						<div class="song-card">
+							<div class="song-image">
+								<div class="overlay-fade-content">
+									<i class="fas fa-play"></i>
+								</div>
+								<img src="./images/le aaunga.jpg" alt="Can't find image">
+							</div>
+							<div class="song-details">
+								<h3>Le Aaunga</h3>
+								<p>AUG 11, 2017</p>
+							</div>
+						</div>
+						<div class="song-card">
+							<div class="song-image">
+								<div class="overlay-fade-content">
+									<i class="fas fa-play"></i>
+								</div>
+								<img src="./images/mahiye.jpg" alt="Can't find image">
+							</div>
+							<div class="song-details">
+								<h3>Mahiye</h3>
+								<p>AUG 11, 2017</p>
+							</div>
+						</div>
+						<div class="song-card">
+							<div class="song-image">
+								<div class="overlay-fade-content">
+									<i class="fas fa-play"></i>
+								</div>
+								<img src="./images/pasoori.jpg" alt="Can't find image">
+							</div>
+							<div class="song-details">
+								<h3>Pasoori</h3>
+								<p>AUG 11, 2017</p>
+							</div>
+						</div>
+						<div class="song-card">
+							<div class="song-image">
+								<div class="overlay-fade-content">
+									<i class="fas fa-play"></i>
+								</div>
+								<img src="./images/rataan-lambiya.jpg" alt="Can't find image">
+							</div>
+							<div class="song-details">
+								<h3>Raatan Lambiya</h3>
+								<p>AUG 11, 2017</p>
+							</div>
+						</div>
+						<div class="song-card">
+							<div class="song-image">
+								<div class="overlay-fade-content">
+									<i class="fas fa-play"></i>
+								</div>
+								<img src="./images/tum-kya-mile.jpg" alt="Can't find image">
+							</div>
+							<div class="song-details">
+								<h3>Tum kya mile</h3>
+								<p>AUG 11, 2017</p>
+							</div>
+						</div>
+					</div>
+				</section>
+		</aside>
+
+
+				<!-- Here one section of the page completes and second section of page starts -->
+			<!-- The input checkbox is just used for toggling the side panel in smaller screens -->
+			<!-- On smaller screens the complete section 2 becomes a side panel and does not cover the space of main page -->
+			<input type="checkbox" id="side-panel">
+			<label for="side-panel" id="show_me"><i class="fas fa-chevron-left"></i></label>
+
+			<!-- Section 2 starts here -->
+			<aside class="aside section2">
+				
+
+				<!-- The complete side panel is wrapped in a single flex and all the items are arranged in a fancy manner -->
+
+				<!-- This is the header of section 2 -->
+				<div class="queue-header">
+					<h1>Queue</h1>
+					<div class="queue-dropdown">
+						<input type="checkbox" id="queue-menu">
+						<label for="queue-menu">
+							Queue<i class="fas fa-chevron-down"></i>
+						</label>
+						<div class="queue-dropdown-menu">
+							<ul>
+								<li>Playlists</li>
+								<li>Favourite Songs</li>
+						</div>
+					</div>
+				</div>
+
+				<!-- All the items further described below with class name = "queue-item" are queue items which are displayed on side panel  -->
+				<div class="queue-item">
+					<div class="queue-item-left">
+						<h2 class="song-number">
+							01
+						</h2>
+						<div class="queue-song-image">
+							<div class="overlay-content">
+								<i class="fas fa-play"></i>
+							</div>
+							<img src="./images/tum-kya-mile.jpg" alt="Can't find Image">
+						</div>
+						<div class="queue-song-details">
+						  <p class="song-title">Tum kya mile</p>
+						  <p class="song-release">AUG 11,2017</p>
+						</div>
+					</div>
+					<div class="queue-item-right">
+						<i class="far fa-heart"></i>
+					</div>
+				</div>
+				<div class="queue-item">
+					<div class="queue-item-left">
+						<h2 class="song-number">
+							02						</h2>
+						<div class="queue-song-image">
+							<div class="overlay-content">
+								<i class="fas fa-play"></i>
+							</div>
+							<img src="./images/aaj-ke-baad.jpg" alt="Can't find Image">
+						</div>
+						<div class="queue-song-details">
+						  <p class="song-title">Aaj ke baad</p>
+						  <p class="song-release">OCT 12,2015</p>
+						</div>
+					</div>
+					<div class="queue-item-right">
+						<i class="far fa-heart"></i>
+					</div>
+				</div><div class="queue-item">
+					<div class="queue-item-left">
+						<h2 class="song-number">
+							03
+						</h2>
+						<div class="queue-song-image">
+							<div class="overlay-content">
+								<i class="fas fa-play"></i>
+							</div>
+							<img src="./images/le aaunga.jpg" alt="Can't find Image">
+						</div>
+						<div class="queue-song-details">
+						  <p class="song-title">Le Aaunga</p>
+						  <p class="song-release">JAN 16,2018</p>
+						</div>
+					</div>
+					<div class="queue-item-right">
+						<i class="far fa-heart"></i>
+					</div>
+				</div><div class="queue-item">
+					<div class="queue-item-left">
+						<h2 class="song-number">
+							04
+						</h2>
+						<div class="queue-song-image">
+							<div class="overlay-content">
+								<i class="fas fa-play"></i>
+							</div>
+							<img src="./images/cardigan-taylor.jpg" alt="Can't find Image">
+						</div>
+						<div class="queue-song-details">
+						  <p class="song-title">Cardigan</p>
+						  <p class="song-release">AUG 10,2013</p>
+						</div>
+					</div>
+					<div class="queue-item-right">
+						<i class="far fa-heart"></i>
+					</div>
+				</div><div class="queue-item">
+					<div class="queue-item-left">
+						<h2 class="song-number">
+							05
+						</h2>
+						<div class="queue-song-image">
+							<div class="overlay-content">
+								<i class="fas fa-play"></i>
+							</div>
+							<img src="./images/pasoori.jpg" alt="Can't find Image">
+						</div>
+						<div class="queue-song-details">
+						  <p class="song-title">Pasoori</p>
+						  <p class="song-release">AUG 11,2017</p>
+						</div>
+					</div>
+					<div class="queue-item-right">
+						<i class="far fa-heart"></i>
+					</div>
+				</div><div class="queue-item">
+					<div class="queue-item-left">
+						<h2 class="song-number">
+							06
+						</h2>
+						<div class="queue-song-image">
+							<div class="overlay-content">
+								<i class="fas fa-play"></i>
+							</div>
+							<img src="./images/rataan-lambiya.jpg" alt="Can't find Image">
+						</div>
+						<div class="queue-song-details">
+						  <p class="song-title">Raatan Lambiya</p>
+						  <p class="song-release">AUG 11,2012</p>
+						</div>
+					</div>
+					<div class="queue-item-right">
+						<i class="far fa-heart"></i>
+					</div>
+				</div>
+			
+			</aside>
+		</main>
+
+		<!-- Main section of page completes here and footer starts hereafter main-->
+
+		<footer>
+			<!-- The complete footer is divided into 3 parts -->
+			<!-- First part contains details of current song -->
+			<!-- Second part gives basic controls regarding the current song -->
+			<!-- Third part contains some extra controls -->
+			<!-- All these controls are just icons and are not working right now -->
+
+			<!-- First Section -->
+			<div class="player_song_section">
+				<div class="player_image">
+					<img src="./images/aaj-ke-baad.jpg" alt="Cant find image">
+				</div>
+				<div class="inner-flex">
+					<div class="song-details">
+						<h3>aaj-ke-baad</h3>
+						<p>AUG 11, 2017</p>
+					</div>
+					<div class="heart-and-ban-icon">
+						<span>
+							<i class="far fa-heart"></i>
+						</span>
+						<span>
+							<i class="fas fa-ban"></i>
+						</span>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Second Section -->
+			<div class="music_player">
+				<div class="controls">
+					<div><i class="fas fa-random"></i></div>
+					<div><i class="fas fa-step-backward"></i></div>
+					<div><i class="fas fa-pause-circle"></i></div>
+					<div><i class="fas fa-step-forward"></i></div>
+					<div><i class="fas fa-redo"></i></div>
+				</div>
+				<!-- this is the slider -->
+				<div id="slider">
+					<!-- current time -->
+					<div class="time">
+						1:39
+					</div>
+					<div class="slidecontainer">
+						<input type="range" min="0" max="100" value="0" class="slider" id="myRange">
+					</div>
+					<!-- total time -->
+					<div class="time">
+						4:44
+					</div>
+				</div>
+			</div>
+
+			<!-- Third Section -->
+			<div class="extras">
+				<div>
+					<i class="fas fa-list-ul"></i>
+				</div>
+				<div>
+					<i class="fas fa-laptop"></i>
+				</div>
+				<div>
+					<i class="fas fa-volume-up"></i>
+				</div>
+				<!-- Slider for showing music volume controls -->
+				<div class="slidecontainer" style="width:30%;">
+					<input type="range" min="0" max="100" value="0" class="slider" id="myRange" style="margin-top:0px;">
+				</div>
+				<div>
+					<i class="fas fa-expand-alt"></i>
+				</div>
+			</div>
+		</footer>
+
+   
+</body>
+</html>
